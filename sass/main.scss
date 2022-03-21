@@ -1,0 +1,72 @@
+@import "./colors";
+@import "./components";
+@import "./mixins";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.6rem;
+}
+
+// NAV
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+
+	&:focus {
+		outline: none;
+		border-radius: 8px;
+	}
+
+    &:hover {
+        .burger-btn_bars::after,.burger-btn_bars::before {
+            width: 100%;
+        }
+    }
+
+	&_box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+
+	&_bars,
+	&_bars::after,
+	&_bars::before {
+		@include burgerBtn;
+	}
+
+    &_bars {
+        width: 100%;
+
+        &::after {
+            top: 13px;
+            width: 60%;
+        }
+
+        &::before {
+            top: 27px;
+            width: 30%;
+            transition-delay: .1s;
+        }
+
+    }
+}
