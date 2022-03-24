@@ -1,6 +1,15 @@
 const nav = document.querySelector('.nav');
 const navBtn = document.querySelector('.burger-btn');
 const allNavItems = document.querySelectorAll('.nav__item');
+const handleNavItemsAnimation = () => {
+  let delayTime = 0;
+
+  allNavItems.forEach((item) => {
+    item.classList.toggle('nav-items-animation');
+    item.style.animationDelay = `.${delayTime}s`;
+    delayTime++;
+  });
+};
 
 const handleNav = () => {
   nav.classList.toggle('nav--active');
@@ -11,17 +20,7 @@ const handleNav = () => {
     });
   });
 
-  handleNavItemsAnimation ();
-};
-
-const handleNavItemsAnimation = () => {
-  let delayTime = 0;
-
-  allNavItems.forEach(item => {
-    item.classList.toggle('nav-items-animation');
-    item.style.animationDelay = "." + delayTime + "s";
-    delayTime++;
-  });
+  handleNavItemsAnimation();
 };
 
 navBtn.addEventListener('click', handleNav);
