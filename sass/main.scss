@@ -218,9 +218,12 @@ body {
 
 // ISLANDS
 .islands {
+
+	
+	
 	&__card {
 		position: relative;
-		margin: 2em 0;
+		margin: 1em 0;
 		height: 450px;
 		color: $pure-white;
 		text-align: center;
@@ -231,7 +234,6 @@ body {
 				transform: rotateY(-180deg);
 				opacity: 0;
 			}
-
 			.islands__card-info {
 				transform: rotateY(0);
 				opacity: 1;
@@ -250,19 +252,14 @@ body {
 					url("../img/water-g4bf05431e_640.jpg");
 			}
 			&--second {
-				background-image: $blue-gradient,
-					url("../img/hawaii-g9e81e6e7f_640.jpg");
+				background-image: $blue-gradient, url("../img/polinezja.jpg");
 			}
 			&--third {
 				background-image: $purple-gradient,
-					url("../img/boat-g212783af1_640.jpg");
+					url("../img/hawaii-g9e81e6e7f_640.jpg");
 			}
 
 			&-title {
-				position: absolute;
-				top: 2em;
-				left: 50%;
-				transform: translateX(-50%);
 				font-family: "Dancing Script", cursive;
 				font-size: 2.8rem;
 			}
@@ -278,13 +275,12 @@ body {
 				}
 			}
 		}
-
 		&-info {
 			position: absolute;
 			top: 0;
 			bottom: 0;
-			right: 0;
 			left: 0;
+			right: 0;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -295,7 +291,6 @@ body {
 			transition: transform 1s, opacity 1s;
 
 			&-title {
-				
 				@include islandCardStyle;
 				top: 1.2em;
 				font-family: "Dancing Script", cursive;
@@ -309,29 +304,30 @@ body {
 
 				&-item {
 					padding: 1em;
-					font-size: 1rem;
+					font-size: 1.4rem;
 					border-bottom: 1px solid $light-white;
 
 					&:last-child {
 						border-bottom: none;
 					}
+
 				}
 			}
 
 			&-btn {
 				@include islandCardStyle;
+				bottom: 2em;
 				padding: 1em;
 				border-radius: 8px;
-				width: 800%;
+				width: 80%;
 				border: none;
-				background-color: $grenn-color;
+				background-color: $green-color;
 				cursor: pointer;
-
-
 
 				&::before {
 					background-color: $green-color-hover;
 				}
+
 			}
 		}
 	}
@@ -340,7 +336,7 @@ body {
 // OFFERS
 .offers {
 	position: relative;
-	@include heroImages('../img/maldives-g3c17aa083_1920.jpg');
+	@include heroImages("../img/maldives-g3c17aa083_1920.jpg");
 	overflow: hidden;
 
 	.section-heading {
@@ -355,12 +351,11 @@ body {
 
 		&-img {
 			width: 100%;
-			transition: transform .3s;
+			transition: transform 0.3s;
 
 			&:hover {
 				transform: scale(1.1);
 			}
-
 		}
 
 		&-info {
@@ -394,14 +389,8 @@ body {
 			&::before {
 				background-color: $secondary-color;
 			}
-
-
 		}
 	}
-
-	
-
-
 }
 
 //==================================
@@ -435,6 +424,7 @@ body {
 			margin-bottom: 0;
 			max-height: 300px;
 		}
+		
 	}
 
 	.offers {
@@ -468,6 +458,7 @@ body {
 			}
 		}
 	}
+	
 }
 
 @media (min-width: 768px) {
@@ -574,7 +565,7 @@ body {
 	}
 
 	.offers {
-		background-image: $blue-gradient, url('../img/maldives-g3c17aa083_1920.jpg');
+		background-image: $blue-gradient, url("../img/maldives-g3c17aa083_1920.jpg");
 	}
 
 	&__option {
