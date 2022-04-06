@@ -218,9 +218,6 @@ body {
 
 // ISLANDS
 .islands {
-
-	
-	
 	&__card {
 		position: relative;
 		margin: 1em 0;
@@ -310,7 +307,6 @@ body {
 					&:last-child {
 						border-bottom: none;
 					}
-
 				}
 			}
 
@@ -327,7 +323,6 @@ body {
 				&::before {
 					background-color: $green-color-hover;
 				}
-
 			}
 		}
 	}
@@ -394,7 +389,7 @@ body {
 }
 
 //REVIEWS
-@media(max-width: 767px) {
+@media (max-width: 767px) {
 	.reviews.section-padding {
 		padding: 6em, 0;
 	}
@@ -407,12 +402,11 @@ body {
 		padding: 2em;
 		border-radius: 8px;
 		box-shadow: 3px 3px 10px #2e2e2e2e;
-        transition: transform .3s;
+		transition: transform 0.3s;
 
-         &:hover {
-			 transform: scale(.95);
-		 }
-       
+		&:hover {
+			transform: scale(0.95);
+		}
 	}
 
 	&__box-img {
@@ -426,17 +420,13 @@ body {
 			height: 80px;
 			object-fit: cover;
 			border-radius: 50%;
-
-
 		}
-
 	}
 
 	&__box-quote {
 		margin-bottom: 1em;
 		font-size: 3rem;
 		color: $main-color;
-
 	}
 
 	&__box-text {
@@ -444,7 +434,56 @@ body {
 		font-size: 1.4rem;
 		color: $dark;
 	}
+}
 
+//CONTACT
+.contact {
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: $dark;
+	}
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		@include contactForm;
+	}
+
+	&__form-textarea {
+		@include contactForm;
+
+		max-width: 100%;
+		width: 100%;
+		min-height: 150px;
+	}
+
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: $main-color;
+		cursor: pointer;
+
+		&::before {
+			background-color: $secondary-color;
+		}
+	}
 }
 
 //==================================
@@ -478,7 +517,6 @@ body {
 			margin-bottom: 0;
 			max-height: 300px;
 		}
-		
 	}
 
 	.offers {
@@ -512,7 +550,6 @@ body {
 			}
 		}
 	}
-	
 }
 
 @media (min-width: 768px) {
@@ -640,6 +677,4 @@ body {
 			width: 30%;
 		}
 	}
-
-	
 }
