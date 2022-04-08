@@ -133,13 +133,13 @@ body {
   width: 100%;
 }
 
-.burger-btn_box {
+.burger-btn__box {
   position: relative;
   width: 40px;
   height: 30px;
 }
 
-.burger-btn_bars, .burger-btn_bars::after, .burger-btn_bars::before {
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
   position: absolute;
   right: 0;
   height: 4px;
@@ -149,16 +149,16 @@ body {
   transition: width 0.3s;
 }
 
-.burger-btn_bars {
+.burger-btn__bars {
   width: 100%;
 }
 
-.burger-btn_bars::after {
+.burger-btn__bars::after {
   top: 13px;
   width: 60%;
 }
 
-.burger-btn_bars::before {
+.burger-btn__bars::before {
   top: 27px;
   width: 30%;
   -webkit-transition-delay: 0.1s;
@@ -248,6 +248,12 @@ body {
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
 }
 
 .header {
