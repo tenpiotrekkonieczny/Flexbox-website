@@ -6,8 +6,36 @@ $dark: #2e2e2e;
 $green-color: #00ffaa;
 $green-color-hover: #0fe29c;
 
+<<<<<<< HEAD
 $light-blue-gradient: linear-gradient(45deg, rgba(8, 207, 255, 0.75), rgba(8, 24, 255, 0.75));
 $blue-gradient: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75));
 $purple-gradient: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75));
 $blue-gradient-solid: linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184));
 $light-blue-gradient-solid: radial-gradient(circle at top right, rgb(0, 78, 255) 0%, rgb(0, 212, 255) 100%);
+=======
+$light-blue-gradient: linear-gradient(
+	45deg,
+	rgba(8, 206, 255, 0.75),
+	rgba(8, 24, 255, 0.75)
+);
+$blue-gradient: linear-gradient(
+	45deg,
+	rgba(20, 105, 241, 0.75),
+	rgba(42, 10, 184, 0.75)
+);
+$purple-gradient: linear-gradient(
+	45deg,
+	rgba(190, 10, 214, 0.75),
+	rgba(68, 0, 255, 0.75)
+);
+$blue-gradient-solid: linear-gradient(
+	45deg,
+	rgb(20, 105, 241),
+	rgb(42, 10, 184)
+);
+$light-blue-gradient-solid: radial-gradient(
+	circle at top right,
+	rgb(0, 78, 255) 0%,
+	rgb(0, 212, 255) 100%
+);
+>>>>>>> c11e934afea150698c84d3d9b6ed44a5c95871b4

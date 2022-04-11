@@ -128,8 +128,8 @@ body {
   border-radius: 8px;
 }
 
-.burger-btn:hover .burger-btn_bars::after,
-.burger-btn:hover .burger-btn_bars::before {
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
   width: 100%;
 }
 
@@ -250,12 +250,6 @@ body {
           animation: navItemsAnimation 1s both;
 }
 
-.black-bars-color,
-.black-bars-color::after,
-.black-bars-color::before {
-  background-color: #2e2e2e;
-}
-
 .header {
   position: relative;
   display: -webkit-box;
@@ -307,6 +301,12 @@ body {
 
 .header__btn::before {
   background-color: #eee;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
 }
 
 .dreams__box {
@@ -695,12 +695,12 @@ body {
 }
 
 .footer__box-link {
-  padding: 0 .3em;
+  padding: 0 0.3em;
   color: #fff;
   font-size: 3.6rem;
   text-decoration: none;
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .footer__box-link:first-child {
